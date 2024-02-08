@@ -32,33 +32,8 @@ collective.smtpssl
 ==================
 
 Patches zope.sendmail.mailer.SMTPMailer to use smtplib.SMTP_SSL instead of smtplib.SMTP, to support sending oder port 465.
-
-Features
---------
-
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
+Please note, sending over port 587 will not work anymore when this package is installed!
+This is only necessary until is fixed.
 
 Installation
 ------------
@@ -79,7 +54,7 @@ and then running ``bin/buildout``
 Authors
 -------
 
-Provided by awesome people ;)
+Provided by Maik Derstappen | MrTango | derico.de
 
 
 Contributors
@@ -95,14 +70,12 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/collective.smtpssl/issues
 - Source Code: https://github.com/collective/collective.smtpssl
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
 -------
 
 If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
 
 
 License
