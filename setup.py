@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 """Installer for the collective.smtpssl package."""
 
-from setuptools import find_packages
-from setuptools import setup
-
+from setuptools import find_packages, setup
 
 long_description = "\n\n".join(
     [
@@ -27,9 +25,11 @@ setup(
         "Framework :: Plone :: 5.2",
         "Framework :: Plone :: 6.0",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
@@ -53,9 +53,7 @@ setup(
     install_requires=[
         "setuptools",
         # -*- Extra requirements: -*-
-        "z3c.jbot",
-        "plone.api>=1.8.4",
-        "plone.app.dexterity",
+        "collective.monkeypatcher",
     ],
     extras_require={
         "test": [
@@ -64,8 +62,6 @@ setup(
             # Remove if your package shall be part of coredev.
             # plone_coredev tests as of 2016-04-01.
             "plone.testing>=5.0.0",
-            "plone.app.contenttypes",
-            "plone.app.robotframework[debug]",
         ],
     },
     entry_points="""
