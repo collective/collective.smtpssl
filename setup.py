@@ -14,7 +14,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.smtpssl",
-    version="1.0",
+    version="1.1.dev0",
     description="Patches zope.sendmail.mailer.SMTPMailer to use smtplib.SMTP_SSL instead of smtplib.SMTP, to support sending oder port 465.",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
