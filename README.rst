@@ -35,6 +35,10 @@ Patches zope.sendmail.mailer.SMTPMailer to use smtplib.SMTP_SSL instead of smtpl
 Please note, sending over port 587 will not work anymore when this package is installed!
 This is only necessary until is fixed.
 
+!! Note !! this is only working and useful for zope.sendmail < 6.2.
+From version 6.2 you can set implicit_tls to archive the same.
+
+
 Installation
 ------------
 

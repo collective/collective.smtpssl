@@ -54,6 +54,7 @@ setup(
         "setuptools",
         # -*- Extra requirements: -*-
         "collective.monkeypatcher",
+        "zope.sendmail<=6.1",
     ],
     extras_require={
         "test": [
