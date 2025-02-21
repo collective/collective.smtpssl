@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2 (unreleased)
+2.0 (2025-02-21)
 ----------------
 
 - remove the actual patch code, but enable implicit_tls in MailHost
