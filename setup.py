@@ -14,7 +14,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.smtpssl",
-    version="1.2.dev0",
+    version="2.0.dev0",
     description="Patches zope.sendmail.mailer.SMTPMailer to use smtplib.SMTP_SSL instead of smtplib.SMTP, to support sending oder port 465.",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
@@ -22,10 +22,8 @@ setup(
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
-        "Framework :: Plone :: 5.2",
-        "Framework :: Plone :: 6.0",
+        "Framework :: Plone :: 6.1",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
@@ -49,12 +47,13 @@ setup(
     package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
-    python_requires=">=3.7",
+    python_requires=">=3.9",
     install_requires=[
         "setuptools",
         # -*- Extra requirements: -*-
         "collective.monkeypatcher",
-        "zope.sendmail<=6.1",
+        "zope.sendmail>=6.2",
+        "Products.MailHost>=6.0",
     ],
     extras_require={
         "test": [

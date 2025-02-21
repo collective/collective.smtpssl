@@ -31,13 +31,26 @@
 collective.smtpssl
 ==================
 
+.. |ss| raw:: html
+
+    <strike>
+
+.. |se| raw:: html
+
+    </strike>
+
+|ss|
 Patches zope.sendmail.mailer.SMTPMailer to use smtplib.SMTP_SSL instead of smtplib.SMTP, to support sending oder port 465.
 Please note, sending over port 587 will not work anymore when this package is installed!
 This is only necessary until is fixed.
 
 !! Note !! this is only working and useful for zope.sendmail < 6.2.
 From version 6.2 you can set implicit_tls to archive the same.
+|se|
 
+
+From version 2.0 on we don't patch the MailHost but enable the implicit_tls in the MailHost, so that one can use port 465.
+This could be done in any setuphandlers.py, which would make this package obsolute in that setup.
 
 Installation
 ------------

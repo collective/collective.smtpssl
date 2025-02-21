@@ -2,10 +2,10 @@ Changelog
 =========
 
 
-1.2 (unreleased)
+2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- remove the actual patch code, but enable implicit_tls in MailHost
 
 
 1.1 (2024-06-14)

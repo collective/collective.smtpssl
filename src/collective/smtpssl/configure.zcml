@@ -44,14 +44,6 @@
   <!-- -*- extra stuff goes here -*- -->
 
 
-  <include package="collective.monkeypatcher" />
-
-  <monkey:patch
-      description="Patches zope.sendmail.mailer.SMTPMailer to use smtplib.SMTP_SSL instead of smtplib.SMTP, to support sending oder port 465."
-      class="zope.sendmail.mailer.SMTPMailer"
-      original="smtp"
-      replacement=".patches.smtp_ssl"
-      />
 
 
 </configure>
